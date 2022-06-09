@@ -33,13 +33,13 @@ export const ContactForm = () => {
             );
     };
     const validateMessages = {
-        required: ' is required!',
+        required: '${label} is required!',
         types: {
-            email: ' is not a valid email!',
-            number: ' is not a valid number!',
+            email: '${label} is not a valid email!',
+            number: '${label} is not a valid number!',
         },
         number: {
-            range: ' must be between ${min} and ${max}',
+            range: '${label} must be between ${min} and ${max}',
         },
     };
 

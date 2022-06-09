@@ -103,7 +103,7 @@ class HomeBanner extends Component {
                         <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
                             <div className="row g-0">
                                 <div className="col">
-                                    <h1 className="text-white">ddThoughts that make sense</h1>
+                                    <h1 className="text-white">Thoughts that make sense</h1>
                                 </div>
                             </div>
                             <div style={subTitleStyle} className="row align-items-center">
