@@ -4,6 +4,7 @@ import Contact from '../components/Contact';
 import Home from '../components/HomeLayouts';
 import JacobD from '../components/OurTeam/JacobD';
 import GustavoL from '../components/OurTeam/GustavoL';
+import LiYang from '../components/OurTeam/LiYang';
 import PascualG from '../components/OurTeam/PascualG';
 
 function AppRoute() {
@@ -16,6 +17,7 @@ function AppRoute() {
 
                 <Route path="/teams/jacobd" element={<JacobD />} />
                 <Route path="/teams/gustavol" element={<GustavoL />} />
+                <Route path="/teams/li_yang" element={<LiYang />} />
                 <Route path="/teams/pascualg" element={<PascualG />} />
             </Routes>
         </div>

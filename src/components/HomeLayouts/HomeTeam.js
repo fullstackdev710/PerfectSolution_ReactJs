@@ -2,6 +2,7 @@ import { Component } from "react";
 import Slider from "react-slick";
 
 import jacobProfileImg from "../../assets/imgs/persons/JacobD-photo-70-70.jpg";
+import emptyPersonImg from "../../assets/imgs/persons/Empty-person-70-70.png";
 // import akiraProfileImg from "../../assets/imgs/persons/Akira-photo-70-70.jpg";
 import gustavoProfileImg from "../../assets/imgs/persons/Gustavo-photo-70-70.jpeg";
 import pascualProfileImg from "../../assets/imgs/persons/PascualG-photo-70-70.jpg";
@@ -14,21 +15,31 @@ class HomeTeam extends Component {
                 slug: "jacobd",
                 name: "Jacob Peace Davidson",
                 photo: jacobProfileImg,
-                position: "CEO & Communicator",
+                position: "Full Stack Developer & Communicator",
                 excerpt: "Founder of multiple successful tech companies – focused on solving big industry problems with innovation",
                 experiences: "15",
                 projects: "∞"
             },
             {
                 id: 2,
-                slug: "gustavol",
-                name: "Gustavo Adolfo L",
-                photo: gustavoProfileImg,
-                position: "Web Developer",
-                excerpt: "Website developer based on Framework: WordPress, Shopify, SquareSpace, Wix, etc.",
+                slug: "li_yang",
+                name: "Li Yang",
+                photo: emptyPersonImg,
+                position: "Full Stack Developer",
+                excerpt: "Website developer based on Framework: CodeIgniter, Laravel WordPress, Shopify, SquareSpace, Wix, etc.",
                 experiences: "7",
                 projects: "3"
             },
+            // {
+            //     id: 2,
+            //     slug: "gustavol",
+            //     name: "Gustavo Adolfo L",
+            //     photo: gustavoProfileImg,
+            //     position: "Web Developer",
+            //     excerpt: "Website developer based on Framework: WordPress, Shopify, SquareSpace, Wix, etc.",
+            //     experiences: "7",
+            //     projects: "3"
+            // },
             {
                 id: 3,
                 slug: "pascualg",
