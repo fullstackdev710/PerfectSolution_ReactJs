@@ -33,35 +33,35 @@ class HomeSuccess extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col col-md-6 col-sm-12 col-12">
-                            <h2 className="text-white pb-3">How we<span> </span>
+                            <h2 className="text-white pb-3">HOW WE<span> </span>
                                 <span style={typeStyle} className="letter-anim pAnimation">
                                     <span>P</span>
-                                    <span>r</span>
-                                    <span>o</span>
-                                    <span>m</span>
-                                    <span>o</span>
-                                    <span>t</span>
-                                    <span>e</span>
+                                    <span>R</span>
+                                    <span>O</span>
+                                    <span>M</span>
+                                    <span>O</span>
+                                    <span>T</span>
+                                    <span>E</span>
                                 </span>
                                 <span style={typeStyle} className="letter-anim tAnimation">
                                     <span>T</span>
-                                    <span>r</span>
-                                    <span>a</span>
-                                    <span>n</span>
-                                    <span>s</span>
-                                    <span>f</span>
-                                    <span>o</span>
-                                    <span>r</span>
-                                    <span>m</span>
+                                    <span>R</span>
+                                    <span>A</span>
+                                    <span>N</span>
+                                    <span>S</span>
+                                    <span>F</span>
+                                    <span>O</span>
+                                    <span>R</span>
+                                    <span>M</span>
                                 </span>
                                 <span style={typeStyle} className="letter-anim sAnimation">
                                     <span>S</span>
-                                    <span>u</span>
-                                    <span>c</span>
-                                    <span>c</span>
-                                    <span>e</span>
-                                    <span>e</span>
-                                    <span>d</span>
+                                    <span>U</span>
+                                    <span>C</span>
+                                    <span>C</span>
+                                    <span>E</span>
+                                    <span>E</span>
+                                    <span>D</span>
                                 </span>
                             </h2>
                             <p className="text-white pb-3">

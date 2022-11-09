@@ -15,7 +15,7 @@ class HomeTeam extends Component {
                 slug: "jacobd",
                 name: "Jacob Peace Davidson",
                 photo: jacobProfileImg,
-                position: "Full Stack Developer & Communicator",
+                position: "CEO & Full Stack Developer",
                 excerpt: "Founder of multiple successful tech companies – focused on solving big industry problems with innovation",
                 experiences: "15",
                 projects: "∞"
@@ -152,7 +152,7 @@ class HomeTeam extends Component {
                 <div className="container">
                     <div className="row">
                         <h2 className="text-white">
-                            Our Team
+                            OUR TEAM
                         </h2>
                         <p className="text-white">
                             We interview dozens of candidates before each hire and promote long-term workings relationships. Every member of our team is ready to deliver immediate value to your project.

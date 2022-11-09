@@ -18,7 +18,7 @@ class HomeWhatWeDo extends Component {
             <section id="home-what-we-do" className="pt-5 pb-5">
                 <div className="container">
                     <div className="row">
-                        <h2 className="text-white">What we do...</h2>
+                        <h2 className="text-white">WHAT WE DO...</h2>
                     </div>
 
                     <div className="row pt-1 pb-1 align">

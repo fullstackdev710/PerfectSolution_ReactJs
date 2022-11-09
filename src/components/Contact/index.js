@@ -109,7 +109,6 @@ export default function Contact() {
                                 </Col>
                                 <Col {...span}>
                                     <ContactForm />
-
                                 </Col>
                             </Row>
                         </Col>

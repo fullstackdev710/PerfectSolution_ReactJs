@@ -56,7 +56,7 @@ class HomeProjects extends Component {
                 <div className="container">
                     <div className="row">
                         <h2 className="text-white">
-                            Projects we Love
+                            PROJECTS WE LOVE
                         </h2>
                     </div>
                     <div className="row pt-5 pb-5 text-white text-center">
