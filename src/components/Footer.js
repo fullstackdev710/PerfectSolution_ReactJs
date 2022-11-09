@@ -1,5 +1,5 @@
 import { Component } from "react";
-import siteLogo from '../assets/imgs/Logo-White.png';
+import siteLogo from '../assets/imgs/Peace_Marketing_Logo.png';
 
 class Footer extends Component {
     render() {
@@ -17,7 +17,7 @@ class Footer extends Component {
             color: "white"
         }
         let facebookUrl = "https://www.facebook.com/dragon.soft.star.forest/";
-        let skypeUrl = "skype:silverstar710rich?chat";
+        let skypeUrl = "skype:live:silverstar710rich?chat";
         let linkedinUrl = "https://www.linkedin.com/in/jacob-davidson-73a7a7223/";
 
         return (

@@ -77,7 +77,7 @@ class HomeSubscribe extends Component {
 
     render() {
         let facebookUrl = "https://www.facebook.com/dragon.soft.star.forest/";
-        let skypeUrl = "skype:silverstar710rich?chat";
+        let skypeUrl = "skype:live:silverstar710rich?chat";
         let linkedinUrl = "https://www.linkedin.com/in/jacob-davidson-73a7a7223/";
 
         return (

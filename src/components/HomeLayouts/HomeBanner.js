@@ -1,6 +1,6 @@
 import { Component } from "react";
 import Particles from "react-tsparticles";
-import bannerLogo from '../../assets/imgs/icons/banner-logo.png';
+import bannerLogo from '../../assets/imgs/icons/Peace_Marketing_Service_Img.png';
 
 class HomeBanner extends Component {
     render() {
@@ -121,7 +121,7 @@ class HomeBanner extends Component {
                             </div>
                         </div>
                         <div className="col col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-end">
-                            <img src={bannerLogo} alt="" style={{ width: "70%", maxWidth: "320px" }} />
+                            <img src={bannerLogo} alt="" style={{ width: "70%", maxWidth: "320px", height: "fit-content" }} />
                         </div>
                     </div>
                 </div>

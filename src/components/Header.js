@@ -1,7 +1,7 @@
 import { Component } from 'react';
 // import axios from "axios";
 import './Header.css';
-import siteLogo from '../assets/imgs/Logo-White.png';
+import siteLogo from '../assets/imgs/Peace_Marketing_Logo.png';
 import { send } from 'emailjs-com';
 import { Link } from "react-router-dom";
 import { Row, Col, Menu } from "antd";
@@ -181,7 +181,7 @@ class Header extends Component {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="skype:silverstar710rich?chat" className="nav-link text-white" rel="noreferrer" target={"_blank"}>
+                                        <a href="skype:live:silverstar710rich?chat" className="nav-link text-white" rel="noreferrer" target={"_blank"}>
                                             <i className="fab fa-skype"></i>
                                         </a>
                                     </li>
@@ -205,7 +205,7 @@ class Header extends Component {
                                             <img
                                                 src={siteLogo}
                                                 className="header-logo"
-                                                alt="perfect solution logo"
+                                                alt="Peace Marketing IT Service logo"
                                             />
                                         </Link>
                                     </Col>
@@ -259,7 +259,7 @@ class Header extends Component {
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="skype:silverstar710rich?chat" className="nav-link text-white" rel="noreferrer" target={"_blank"}>
+                                                <a href="skype:live:silverstar710rich?chat" className="nav-link text-white" rel="noreferrer" target={"_blank"}>
                                                     <i className="fab fa-skype social-icons"></i>
                                                 </a>
                                             </li>
