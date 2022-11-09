@@ -28,7 +28,8 @@ export const ContactForm = () => {
                     setSubscribeRes('Email sent successfully!');
                 },
                 (error) => {
-                    setSubscribeRes('FAILED...' + error);
+                    let error_msg = `FAILED! If the contact form doesn't work, please use Skype, LinkedIn or Facebook at top or bottom.`
+                    setSubscribeRes(error_msg);
                 }
             );
     };

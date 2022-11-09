@@ -1,5 +1,5 @@
-import Particles from "react-tsparticles";
-import { Row, Col, Image, Collapse, Space, Carousel } from "antd";
+import { Row, Col, Image, Collapse, Space, Carousel, Progress } from "antd";
+import ParticlesComponent from '../General/ParticlesComponent';
 import profilePhoto from "../../assets/imgs/persons/Empty-person.png";
 import imgOne from '../../assets/imgs/home/1.webp';
 import imgTwo from '../../assets/imgs/home/2.webp';
@@ -26,82 +26,19 @@ export default function LiYang() {
         sm: 24,
         xs: 24
     }
+    let spanSkills = {
+        lg: 8,
+        md:12,
+        sm:24,
+        xs:24
+    }
 
     return (
         <Row style={{ padding: "250px 0 150px 0", backgroundColor: "#000000" }}>
             <Col span={24} className="container">
                 <Row>
                     <div className="background-overlay">
-                        <Particles params={{
-                            particles: {
-                                number: {
-                                    value: 70,
-                                    density: {
-                                        enable: true,
-                                        value_area: 2000
-                                    }
-                                },
-                                color: {
-                                    value: "#ffffff"
-                                },
-                                shape: {
-                                    type: "star",
-                                    stroke: {
-                                        width: 0,
-                                        color: "#000000"
-                                    },
-                                    polygon: {
-                                        nb_sides: 5,
-                                    },
-                                    image: {
-                                        src: "img/github.svg",
-                                        width: 100,
-                                        height: 100
-                                    }
-                                },
-                                opacity: {
-                                    value: 0.5,
-                                    random: false,
-                                    anim: {
-                                        enable: false,
-                                        speed: 1,
-                                        opacity_min: 0.1,
-                                        sync: false
-                                    }
-                                },
-                                size: {
-                                    value: 3,
-                                    random: true,
-                                    anim: {
-                                        enable: false,
-                                        speed: 40,
-                                        size_min: 0.1,
-                                        sync: false
-                                    }
-                                },
-                                line_linked: {
-                                    enable: false,
-                                    distance: 150,
-                                    color: "#ffffff",
-                                    opacity: 0.4,
-                                    width: 1
-                                },
-                                move: {
-                                    enable: true,
-                                    speed: 1,
-                                    direction: "none",
-                                    random: false,
-                                    straight: false,
-                                    out_mode: "out",
-                                    bounce: false,
-                                    attract: {
-                                        enable: false,
-                                        rotateX: 600,
-                                        rotateY: 1200
-                                    }
-                                }
-                            },
-                        }} />
+                        <ParticlesComponent />
                     </div>
                 </Row>
                 <Row>
@@ -139,6 +76,130 @@ export default function LiYang() {
                                     <p>Bachelor of Computer Application (BCA), Computer Programming</p>
                                 </Panel>
                             </Collapse>
+                        </Space>
+                        <hr className="text-white w-100" />
+                    </div>
+                    <div className="w-100">
+                        <h4 className="text-white">Skills</h4>
+                        <Space type="panel" direction="vertical" className="w-100 border p-3">
+                            <Row gutter={16}>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">PHP:</span>
+                                    <Progress percent={97} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">JavaScript:</span>
+                                    <Progress percent={95} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">C#:</span>
+                                    <Progress percent={85} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">CSS:</span>
+                                    <Progress percent={100} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">Python:</span>
+                                    <Progress percent={75} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">Html:</span>
+                                    <Progress percent={100} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">jQuery:</span>
+                                    <Progress percent={100} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">Bootstrap:</span>
+                                    <Progress percent={100} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">VBA:</span>
+                                    <Progress percent={90} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">Google App Script:</span>
+                                    <Progress percent={75} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">Web Scrapping:</span>
+                                    <Progress percent={80} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">Data Programming:</span>
+                                    <Progress percent={90} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">Excel:</span>
+                                    <Progress percent={90} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">MySQL:</span>
+                                    <Progress percent={90} strokeColor="#f9e54c" />
+                                </Col>
+                            </Row>
+                        </Space>
+                        <hr className="text-white w-100" />
+                    </div>
+                    <div className="w-100">
+                        <h4 className="text-white">Experienced Web Frameworks</h4>
+                        <Space type="panel" direction="vertical" className="w-100 border p-3">
+                            <Row gutter={16}>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">CodeIgniter:</span>
+                                    <Progress percent={100} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">WordPress:</span>
+                                    <Progress percent={90} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">Shopify:</span>
+                                    <Progress percent={90} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">Webflow:</span>
+                                    <Progress percent={90} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">Asp.net:</span>
+                                    <Progress percent={80} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">React.Js:</span>
+                                    <Progress percent={75} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">Wix:</span>
+                                    <Progress percent={85} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">SquareSpace:</span>
+                                    <Progress percent={90} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">Django:</span>
+                                    <Progress percent={50} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">Flask:</span>
+                                    <Progress percent={60} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">Angular.Js:</span>
+                                    <Progress percent={20} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">Vue.Js:</span>
+                                    <Progress percent={80} strokeColor="#f9e54c" />
+                                </Col>
+                                <Col {...spanSkills} className="d-flex">
+                                    <span className="w-25">HubSpot:</span>
+                                    <Progress percent={75} strokeColor="#f9e54c" />
+                                </Col>
+                            </Row>
                         </Space>
                         <hr className="text-white w-100" />
                     </div>

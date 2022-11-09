@@ -1,7 +1,6 @@
-import Particles from "react-tsparticles";
 import { Row, Col, Image } from "antd";
 import HomeWhatWeDo from '../HomeLayouts/HomeWhatWeDo';
-
+import ParticlesComponent from '../General/ParticlesComponent';
 import logoTrendingUP from "../../assets/imgs/logos/trending-up.png";
 import photoJacobD from "../../assets/imgs/persons/JacobD-photo.jpg";
 
@@ -17,78 +16,7 @@ export default function About() {
             <Col span={24} className="container">
                 <Row>
                     <div className="background-overlay">
-                        <Particles
-                            params={{
-                                particles: {
-                                    number: {
-                                        value: 70,
-                                        density: {
-                                            enable: true,
-                                            value_area: 2000
-                                        }
-                                    },
-                                    color: {
-                                        value: "#ffffff"
-                                    },
-                                    shape: {
-                                        type: "star",
-                                        stroke: {
-                                            width: 0,
-                                            color: "#000000"
-                                        },
-                                        polygon: {
-                                            nb_sides: 5,
-                                        },
-                                        image: {
-                                            src: "img/github.svg",
-                                            width: 100,
-                                            height: 100
-                                        }
-                                    },
-                                    opacity: {
-                                        value: 0.5,
-                                        random: false,
-                                        anim: {
-                                            enable: false,
-                                            speed: 1,
-                                            opacity_min: 0.1,
-                                            sync: false
-                                        }
-                                    },
-                                    size: {
-                                        value: 3,
-                                        random: true,
-                                        anim: {
-                                            enable: false,
-                                            speed: 40,
-                                            size_min: 0.1,
-                                            sync: false
-                                        }
-                                    },
-                                    line_linked: {
-                                        enable: false,
-                                        distance: 150,
-                                        color: "#ffffff",
-                                        opacity: 0.4,
-                                        width: 1
-                                    },
-                                    move: {
-                                        enable: true,
-                                        speed: 1,
-                                        direction: "none",
-                                        random: false,
-                                        straight: false,
-                                        out_mode: "out",
-                                        bounce: false,
-                                        attract: {
-                                            enable: false,
-                                            rotateX: 600,
-                                            rotateY: 1200
-                                        }
-                                    }
-                                },
-                            }}
-                        />
+                        <ParticlesComponent />
                     </div>
                 </Row>
                 <Row>
@@ -96,25 +24,34 @@ export default function About() {
                         <Col>
                             <Row>
                                 <Col span={24}>
-                                    <h3 className="text-white text-center">About Us</h3>
-                                    <div style={{ margin: "auto", maxWidth: "100px" }}>
-                                        <Image src={logoTrendingUP} className="text-center" />
-                                    </div>
-                                    <h6 className="text-white text-center my-3">
-                                        We create together, measure always, and revise often, ensuring your customers stay at the focus.
-                                    </h6>
+                                    <h1 className="text-white text-center">About Us
+                                        <span style={{ maxWidth: "100px", paddingLeft: "20px" }}>
+                                            <Image src={logoTrendingUP} className="text-center w-100" />
+                                        </span>
+                                    </h1>
                                 </Col>
                             </Row>
-                            <Row gutter={24} >
-                                <Col {...span}>
-                                    <Image src={photoJacobD} />
-                                </Col>
-                                <Col {...span}>
-                                    <p className="text-white">
-                                        Peace Marketing was founded by Jacob Davidson in 2017 – with a focus on providing small business and startups with strategic advice on marketing in a digital landscape. Jacob saw the gap between the ‘big wig’ agencies and hefty retainers and saw the need for ethical and affordable marketing advice and implementation. After many years of working ‘in-house’ and ‘agency-side’ roles he was able to identify the disconnect between both efforts and implementing campaigns across different channels.
-                                    </p>
-                                </Col>
-                            </Row>
+                            <section className="pt-5 pb-5">
+                                <div className="container">
+                                    <Row gutter={24} >
+                                        <Col {...span}>
+                                            <Image src={photoJacobD} />
+                                        </Col>
+                                        <Col {...span}>
+                                            <h6 className="text-white my-3">
+                                                We create together, measure always, and revise often, ensuring your customers stay at the focus.
+                                            </h6>
+                                            <p className="text-white">
+                                                Peace Marketing was founded by Jacob Davidson in 2017 – with a focus on providing small business and startups with strategic advice on marketing in a digital landscape. Jacob saw the gap between the ‘big wig’ agencies and hefty retainers and saw the need for ethical and affordable marketing advice and implementation. After many years of working ‘in-house’ and ‘agency-side’ roles he was able to identify the disconnect between both efforts and implementing campaigns across different channels.
+                                            </p>
+                                            <p className="text-white">
+                                                Team members works individually. But If someone needs help for his project, we can corporate under a client's consent.
+                                                All members are skilled website developers and uses this website to show their working history.
+                                            </p>
+                                        </Col>
+                                    </Row>
+                                </div>
+                            </section>
                             <HomeWhatWeDo />
                         </Col>
                     </div>
