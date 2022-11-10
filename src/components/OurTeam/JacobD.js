@@ -32,6 +32,14 @@ export default function JacobD() {
         sm:24,
         xs:24
     }
+    let projectUrls = {
+        kwash: '/Projects/',
+        ttscan: '',
+        grindfitness: '',
+        braaapmotocycles: '',
+        premier_corex: '',
+        holistic_horizons: ''
+    }
 
     return (
         <Row style={{ padding: "250px 0 150px 0", backgroundColor: "#000000" }}>
@@ -209,7 +217,7 @@ export default function JacobD() {
                         <h4 className="text-white">Work History</h4>
                         <Carousel autoplay>
                             <div className="my-3">
-                                <Row style={{ width: "90%", maxWidth: "640px", margin: "auto" }}>
+                                <Row gutter={16} style={{ width: "90%", maxWidth: "640px", margin: "auto" }}>
                                     <Col {...spanM}>
                                         <h5 className="text-white">Website Redesign and Maintain</h5>
                                         <p><strong>Company Name: </strong>Kopetsky Auto Wash, LLC</p>
@@ -223,35 +231,37 @@ export default function JacobD() {
                                     </Col>
                                     <Col {...spanM}>
                                         <Image src={imgOne} />
+                                        <a href={projectUrls['kwash']} className="ps-btn position-absolute bottom-0 start-50 translate-middle-x mb-5 d-block">View More</a>
                                     </Col>
                                 </Row>
                             </div>
                             <div className="my-3">
-                                <Row style={{ width: "90%", maxWidth: "640px", margin: "auto" }}>
+                                <Row gutter={16} style={{ width: "90%", maxWidth: "640px", margin: "auto" }}>
                                     <Col {...spanM}>
                                         <h5 className="text-white">Website Redesign and Maintain</h5>
-                                        <p><strong>Company Name: </strong>Kopetsky Auto Wash, LLC</p>
+                                        <p><strong>Company Name: </strong>T-Scan Pty Ltd</p>
                                         <p><strong>Duration: </strong>2020/7–2021/11</p>
                                         <p><strong>Website: </strong>
-                                            <a href="https://www.kwash.com/">https://www.kwash.com/</a>
+                                            <a href="http://t-scan.com.au/">http://t-scan.com.au/</a>
                                         </p>
                                         <p><strong>Framework: </strong>WordPress</p>
                                         <p><strong>Template: </strong>Custom Theme</p>
                                         <p><strong>Details: </strong>Development from Scratch</p>
                                     </Col>
-                                    <Col {...spanM}>
+                                    <Col {...spanM} className="text-center">
                                         <Image src={imgTwo} />
+                                        <a href={projectUrls['kwash']} className="ps-btn position-absolute bottom-0 start-50 translate-middle-x mb-5 d-block">View More</a>
                                     </Col>
                                 </Row>
                             </div>
                             <div className="my-3">
-                                <Row style={{ width: "90%", maxWidth: "640px", margin: "auto" }}>
+                                <Row gutter={16} style={{ width: "90%", maxWidth: "640px", margin: "auto" }}>
                                     <Col {...spanM}>
                                         <h5 className="text-white">Website Redesign and Maintain</h5>
                                         <p><strong>Company Name: </strong>Kopetsky Auto Wash, LLC</p>
                                         <p><strong>Duration: </strong>2020/7–2021/11</p>
                                         <p><strong>Website: </strong>
-                                            <a href="https://www.kwash.com/">https://www.kwash.com/</a>
+                                            <a href="https://www.grindequipment.com/">https://www.grindequipment.com/</a>
                                         </p>
                                         <p><strong>Framework: </strong>WordPress</p>
                                         <p><strong>Template: </strong>Custom Theme</p>
@@ -259,17 +269,18 @@ export default function JacobD() {
                                     </Col>
                                     <Col {...spanM}>
                                         <Image src={imgThree} />
+                                        <a href={projectUrls['grindfitness']} className="ps-btn position-absolute bottom-0 start-50 translate-middle-x mb-5 d-block">View More</a>
                                     </Col>
                                 </Row>
                             </div>
                             <div className="my-3">
-                                <Row style={{ width: "90%", maxWidth: "640px", margin: "auto" }}>
+                                <Row gutter={16} style={{ width: "90%", maxWidth: "640px", margin: "auto" }}>
                                     <Col {...spanM}>
                                         <h5 className="text-white">Website Redesign and Maintain</h5>
-                                        <p><strong>Company Name: </strong>Kopetsky Auto Wash, LLC</p>
+                                        <p><strong>Company Name: </strong>Braaap Motorcycles</p>
                                         <p><strong>Duration: </strong>2020/7–2021/11</p>
                                         <p><strong>Website: </strong>
-                                            <a href="https://www.kwash.com/">https://www.kwash.com/</a>
+                                            <a href="https://braaapmotorcycles.com/">https://braaapmotorcycles.com/</a>
                                         </p>
                                         <p><strong>Framework: </strong>WordPress</p>
                                         <p><strong>Template: </strong>Custom Theme</p>
@@ -277,17 +288,18 @@ export default function JacobD() {
                                     </Col>
                                     <Col {...spanM}>
                                         <Image src={imgFour} />
+                                        <a href={projectUrls['braaapmotocycles']} className="ps-btn position-absolute bottom-0 start-50 translate-middle-x mb-5 d-block">View More</a>
                                     </Col>
                                 </Row>
                             </div>
                             <div className="my-3">
-                                <Row style={{ width: "90%", maxWidth: "640px", margin: "auto" }}>
+                                <Row gutter={16} style={{ width: "90%", maxWidth: "640px", margin: "auto" }}>
                                     <Col {...spanM}>
                                         <h5 className="text-white">Website Redesign and Maintain</h5>
-                                        <p><strong>Company Name: </strong>Kopetsky Auto Wash, LLC</p>
+                                        <p><strong>Company Name: </strong>Premier Corex</p>
                                         <p><strong>Duration: </strong>2020/7–2021/11</p>
                                         <p><strong>Website: </strong>
-                                            <a href="https://www.kwash.com/">https://www.kwash.com/</a>
+                                            <a href="https://www.premiercorex.com/">https://www.premiercorex.com/</a>
                                         </p>
                                         <p><strong>Framework: </strong>WordPress</p>
                                         <p><strong>Template: </strong>Custom Theme</p>
@@ -295,17 +307,18 @@ export default function JacobD() {
                                     </Col>
                                     <Col {...spanM}>
                                         <Image src={imgFive} />
+                                        <a href={projectUrls['premier_corex']} className="ps-btn position-absolute bottom-0 start-50 translate-middle-x mb-5 d-block">View More</a>
                                     </Col>
                                 </Row>
                             </div>
                             <div className="my-3">
-                                <Row style={{ width: "90%", maxWidth: "640px", margin: "auto" }}>
+                                <Row gutter={16} style={{ width: "90%", maxWidth: "640px", margin: "auto" }}>
                                     <Col {...spanM}>
                                         <h5 className="text-white">Website Redesign and Maintain</h5>
-                                        <p><strong>Company Name: </strong>Kopetsky Auto Wash, LLC</p>
+                                        <p><strong>Company Name: </strong>Holistic Horizons</p>
                                         <p><strong>Duration: </strong>2020/7–2021/11</p>
                                         <p><strong>Website: </strong>
-                                            <a href="https://www.kwash.com/">https://www.kwash.com/</a>
+                                            <a href="https://holistichorizons.com.au/">https://holistichorizons.com.au/</a>
                                         </p>
                                         <p><strong>Framework: </strong>WordPress</p>
                                         <p><strong>Template: </strong>Custom Theme</p>
@@ -313,6 +326,7 @@ export default function JacobD() {
                                     </Col>
                                     <Col {...spanM}>
                                         <Image src={imgSix} />
+                                        <a href={projectUrls['holistic_horizons']} className="ps-btn position-absolute bottom-0 start-50 translate-middle-x mb-5 d-block">View More</a>
                                     </Col>
                                 </Row>
                             </div>
