@@ -11,52 +11,59 @@ import imgSeven from '../../assets/imgs/home/7.webp';
 
 const projects = [
     {
+        key: 1,
         title: 'Kwash',
         featured_img: imgOne,
-        framework: 'WordPress / Divi Theme builder',
+        framework: 'WordPress',
         description: 'Custom theme development without any builders',
         link: '#'
     },
     {
+        key: 2,
         title: 'T-SCAN',
         featured_img: imgTwo,
-        framework: 'WordPress / Divi Theme builder',
-        description: 'Custom theme development without any builders',
+        framework: 'WordPress',
+        description: 'By using Divi builder, website development',
         link: '#'
     },
     {
+        key: 3,
         title: 'Grind Fitness',
         featured_img: imgThree,
-        framework: 'WordPress / Divi Theme builder',
-        description: 'Custom theme development without any builders',
+        framework: 'WordPress',
+        description: 'By using Divi, website development',
         link: '#'
     },
     {
+        key: 4,
         title: 'Braaap Motocycles',
         featured_img: imgFour,
-        framework: 'WordPress / Divi Theme builder',
-        description: 'Custom theme development without any builders',
+        framework: 'Shopify',
+        description: 'Build all pages individually in liquid custom code',
         link: '#'
     },
     {
+        key: 5,
         title: 'Premier Corex',
         featured_img: imgFive,
-        framework: 'WordPress / Divi Theme builder',
-        description: 'Custom theme development without any builders',
+        framework: 'WordPress',
+        description: 'By using Beaver Builder website development',
         link: '#'
     },
     {
+        key: 6,
         title: 'Holistic Horizons',
         featured_img: imgSix,
-        framework: 'WordPress / Divi Theme builder',
-        description: 'Custom theme development without any builders',
+        framework: 'WordPress',
+        description: 'By using Divi, website development',
         link: '#'
     },
     {
+        key: 7,
         title: 'Gizber Donation',
         featured_img: imgSeven,
-        framework: 'WordPress / Divi Theme builder',
-        description: 'Custom theme development without any builders',
+        framework: 'Duda',
+        description: 'Website development, in specially, build the special widget by custom code.',
         link: '#'
     }
 ];
@@ -119,14 +126,14 @@ class HomeProjects extends Component {
                     <div className="row pt-5 pb-5 text-white text-center">
                         <Slider {...settings}>
                             {
-                                projects.map( project => (
-                                    <div className="hover-overlay">
-                                        <img src={project.featured_img} style={imgStyle} alt="" />
+                                projects.map( ({key, title, featured_img, description, framework, link}) => (
+                                    <div className="hover-overlay" key={key}>
+                                        <img src={featured_img} style={imgStyle} alt="" />
                                         <div className="overlay" style={overlayDivStyle}>
-                                            <h3>{project.title}</h3>
-                                            <p className="text-start"><strong>Framework: </strong>{project.framework}</p>
-                                            <p className="text-start"><strong>Short Description: </strong>{project.description}</p>
-                                            <a href={project.link} class="ps-btn">View More</a>
+                                            <h3>{title}</h3>
+                                            <p className="text-start"><strong>Framework: </strong>{framework}</p>
+                                            <p className="text-start"><strong>Short Description: </strong>{description}</p>
+                                            <a href={link} className="ps-btn">View More</a>
                                         </div>
                                     </div>
                                 ))
@@ -134,9 +141,7 @@ class HomeProjects extends Component {
                         </Slider>
                     </div>
                 </div>
-
             </section>
-
         );
     }
 }
