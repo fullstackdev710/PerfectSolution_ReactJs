@@ -7,6 +7,7 @@ import imgThree from '../../assets/imgs/home/3.webp';
 import imgFour from '../../assets/imgs/home/4.webp';
 import imgFive from '../../assets/imgs/home/5.webp';
 import imgSix from '../../assets/imgs/home/6.webp';
+import imgSeven from '../../assets/imgs/home/7.webp';
 
 class HomeProjects extends Component {
     render() {
@@ -43,7 +44,11 @@ class HomeProjects extends Component {
                 }
             ]
         };
-
+        const overlayDivStyle = {
+            width: "90%",
+            maxWidth: "420px",
+            margin: "auto"
+        }
         const imgStyle = {
             width: "90%",
             height: "auto",
@@ -61,23 +66,47 @@ class HomeProjects extends Component {
                     </div>
                     <div className="row pt-5 pb-5 text-white text-center">
                         <Slider {...settings}>
-                            <div>
+                            <div className="hover-overlay">
                                 <img src={imgOne} style={imgStyle} alt="" />
+                                <div className="overlay" style={overlayDivStyle}>
+                                    <div className="text">Hello World</div>
+                                </div>
                             </div>
-                            <div>
+                            <div className="hover-overlay">
                                 <img src={imgTwo} style={imgStyle} alt="" />
+                                <div className="overlay" style={overlayDivStyle}>
+                                    <div className="text">Hello World</div>
+                                </div>
                             </div>
-                            <div>
+                            <div className="hover-overlay">
                                 <img src={imgThree} style={imgStyle} alt="" />
+                                <div className="overlay" style={overlayDivStyle}>
+                                    <div className="text">Hello World</div>
+                                </div>
                             </div>
-                            <div>
+                            <div className="hover-overlay">
                                 <img src={imgFour} style={imgStyle} alt="" />
+                                <div className="overlay" style={overlayDivStyle}>
+                                    <div className="text">Hello World</div>
+                                </div>
                             </div>
-                            <div>
+                            <div className="hover-overlay">
                                 <img src={imgFive} style={imgStyle} alt="" />
+                                <div className="overlay" style={overlayDivStyle}>
+                                    <div className="text">Hello World</div>
+                                </div>
                             </div>
-                            <div>
+                            <div className="hover-overlay">
                                 <img src={imgSix} style={imgStyle} alt="" />
+                                <div className="overlay" style={overlayDivStyle}>
+                                    <div className="text">Hello World</div>
+                                </div>
+                            </div>
+                            <div className="hover-overlay">
+                                <img src={imgSeven} style={imgStyle} alt="" />
+                                <div className="overlay" style={overlayDivStyle}>
+                                    <div className="text">Hello World</div>
+                                </div>
                             </div>
                         </Slider>
                     </div>

@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import jacobProfileImg from "../../assets/imgs/persons/JacobD-photo-70-70.jpg";
 import emptyPersonImg from "../../assets/imgs/persons/Empty-person-70-70.png";
 // import akiraProfileImg from "../../assets/imgs/persons/Akira-photo-70-70.jpg";
-import gustavoProfileImg from "../../assets/imgs/persons/Gustavo-photo-70-70.jpeg";
+// import gustavoProfileImg from "../../assets/imgs/persons/Gustavo-photo-70-70.jpeg";
 import pascualProfileImg from "../../assets/imgs/persons/PascualG-photo-70-70.jpg";
 
 class HomeTeam extends Component {

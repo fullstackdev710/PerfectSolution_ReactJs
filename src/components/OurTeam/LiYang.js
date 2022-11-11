@@ -88,7 +88,7 @@ export default function LiYang() {
                                     <Progress percent={97} strokeColor="#f9e54c" />
                                 </Col>
                                 <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">JavaScript:</span>
+                                    <span className="w-25">JavaScript<span>:</span></span>
                                     <Progress percent={95} strokeColor="#f9e54c" />
                                 </Col>
                                 <Col {...spanSkills} className="d-flex">
