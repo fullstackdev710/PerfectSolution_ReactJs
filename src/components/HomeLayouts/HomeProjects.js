@@ -9,6 +9,57 @@ import imgFive from '../../assets/imgs/home/5.webp';
 import imgSix from '../../assets/imgs/home/6.webp';
 import imgSeven from '../../assets/imgs/home/7.webp';
 
+const projects = [
+    {
+        title: 'Kwash',
+        featured_img: imgOne,
+        framework: 'WordPress / Divi Theme builder',
+        description: 'Custom theme development without any builders',
+        link: '#'
+    },
+    {
+        title: 'T-SCAN',
+        featured_img: imgTwo,
+        framework: 'WordPress / Divi Theme builder',
+        description: 'Custom theme development without any builders',
+        link: '#'
+    },
+    {
+        title: 'Grind Fitness',
+        featured_img: imgThree,
+        framework: 'WordPress / Divi Theme builder',
+        description: 'Custom theme development without any builders',
+        link: '#'
+    },
+    {
+        title: 'Braaap Motocycles',
+        featured_img: imgFour,
+        framework: 'WordPress / Divi Theme builder',
+        description: 'Custom theme development without any builders',
+        link: '#'
+    },
+    {
+        title: 'Premier Corex',
+        featured_img: imgFive,
+        framework: 'WordPress / Divi Theme builder',
+        description: 'Custom theme development without any builders',
+        link: '#'
+    },
+    {
+        title: 'Holistic Horizons',
+        featured_img: imgSix,
+        framework: 'WordPress / Divi Theme builder',
+        description: 'Custom theme development without any builders',
+        link: '#'
+    },
+    {
+        title: 'Gizber Donation',
+        featured_img: imgSeven,
+        framework: 'WordPress / Divi Theme builder',
+        description: 'Custom theme development without any builders',
+        link: '#'
+    }
+];
 class HomeProjects extends Component {
     render() {
         const settings = {
@@ -47,7 +98,8 @@ class HomeProjects extends Component {
         const overlayDivStyle = {
             width: "90%",
             maxWidth: "420px",
-            margin: "auto"
+            margin: "auto",
+            padding: '10px'
         }
         const imgStyle = {
             width: "90%",
@@ -66,48 +118,19 @@ class HomeProjects extends Component {
                     </div>
                     <div className="row pt-5 pb-5 text-white text-center">
                         <Slider {...settings}>
-                            <div className="hover-overlay">
-                                <img src={imgOne} style={imgStyle} alt="" />
-                                <div className="overlay" style={overlayDivStyle}>
-                                    <div className="text">Hello World</div>
-                                </div>
-                            </div>
-                            <div className="hover-overlay">
-                                <img src={imgTwo} style={imgStyle} alt="" />
-                                <div className="overlay" style={overlayDivStyle}>
-                                    <div className="text">Hello World</div>
-                                </div>
-                            </div>
-                            <div className="hover-overlay">
-                                <img src={imgThree} style={imgStyle} alt="" />
-                                <div className="overlay" style={overlayDivStyle}>
-                                    <div className="text">Hello World</div>
-                                </div>
-                            </div>
-                            <div className="hover-overlay">
-                                <img src={imgFour} style={imgStyle} alt="" />
-                                <div className="overlay" style={overlayDivStyle}>
-                                    <div className="text">Hello World</div>
-                                </div>
-                            </div>
-                            <div className="hover-overlay">
-                                <img src={imgFive} style={imgStyle} alt="" />
-                                <div className="overlay" style={overlayDivStyle}>
-                                    <div className="text">Hello World</div>
-                                </div>
-                            </div>
-                            <div className="hover-overlay">
-                                <img src={imgSix} style={imgStyle} alt="" />
-                                <div className="overlay" style={overlayDivStyle}>
-                                    <div className="text">Hello World</div>
-                                </div>
-                            </div>
-                            <div className="hover-overlay">
-                                <img src={imgSeven} style={imgStyle} alt="" />
-                                <div className="overlay" style={overlayDivStyle}>
-                                    <div className="text">Hello World</div>
-                                </div>
-                            </div>
+                            {
+                                projects.map( project => (
+                                    <div className="hover-overlay">
+                                        <img src={project.featured_img} style={imgStyle} alt="" />
+                                        <div className="overlay" style={overlayDivStyle}>
+                                            <h3>{project.title}</h3>
+                                            <p className="text-start"><strong>Framework: </strong>{project.framework}</p>
+                                            <p className="text-start"><strong>Short Description: </strong>{project.description}</p>
+                                            <a href={project.link} class="ps-btn">View More</a>
+                                        </div>
+                                    </div>
+                                ))
+                            }
                         </Slider>
                     </div>
                 </div>

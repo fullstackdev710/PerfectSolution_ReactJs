@@ -93,6 +93,8 @@ section {
 }
 .hover-overlay {
     position: relative;
+    cursor: pointer;
+
     .overlay {
         position: absolute;
         top: 0;
@@ -103,6 +105,10 @@ section {
         opacity: 0;
         transition: .5s ease;
         background-color: #000000c0;
+
+        h3, p {
+            color: white !important;
+        }
     }
 }
 
