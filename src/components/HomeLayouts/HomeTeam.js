@@ -61,7 +61,7 @@ class HomeTeam extends Component {
                 experiences: "5",
                 projects: "~100"
             },
-        ]
+        ];
 
         const settings = {
             dots: true,

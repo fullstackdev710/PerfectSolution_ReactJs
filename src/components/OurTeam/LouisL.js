@@ -1,5 +1,6 @@
-import { Row, Col, Image, Collapse, Space, Carousel, Progress } from "antd";
+import { Row, Col, Image, Collapse, Space, Carousel } from "antd";
 import ParticlesComponent from '../General/ParticlesComponent';
+import ProgressComponent from '../General/ProgressComponent';
 import profilePhoto from "../../assets/imgs/persons/LouisL-photo.png";
 import imgOne from '../../assets/imgs/home/1.webp';
 import imgTwo from '../../assets/imgs/home/2.webp';
@@ -9,6 +10,157 @@ import imgFive from '../../assets/imgs/home/5.webp';
 import imgSix from '../../assets/imgs/home/6.webp';
 
 const { Panel } = Collapse;
+const skills = [
+   {
+       id: 1,
+       name: "PHP",
+       percent: 97
+   },
+   {
+       id: 2,
+       name: "JavaScript",
+       percent: 97
+   },
+   {
+       id: 3,
+       name: "C#",
+       percent: 97
+   },
+   {
+       id: 4,
+       name: "CSS",
+       percent: 97
+   },
+   {
+       id: 5,
+       name: "Python",
+       percent: 97
+   },
+   {
+       id: 6,
+       name: "Html",
+       percent: 97
+   },
+   {
+       id: 7,
+       name: "PHP",
+       percent: 97
+   },
+   {
+       id: 8,
+       name: "jQuery",
+       percent: 97
+   },
+   {
+       id: 9,
+       name: "Bootstrap",
+       percent: 97
+   },
+   {
+       id: 10,
+       name: "VBA",
+       percent: 97
+   },
+   {
+       id: 11,
+       name: "Google App Script",
+       percent: 97
+   },
+   {
+       id: 12,
+       name: "Web Scrapping",
+       percent: 97
+   },
+   {
+       id: 13,
+       name: "Data Programming",
+       percent: 97
+   },
+   {
+       id: 14,
+       name: "Excel",
+       percent: 97
+   },
+   {
+       id: 15,
+       name: "MySQL",
+       percent: 97
+   },
+];
+
+const frameworks = [
+   {
+       id: 1,
+       name: "CodeIgniter",
+       percent: 100
+   },
+   {
+       id: 2,
+       name: "WordPress",
+       percent: 97
+   },
+   {
+       id: 3,
+       name: "Duda",
+       percent: 97
+   },
+   {
+       id: 4,
+       name: "Shopify",
+       percent: 97
+   },
+   {
+       id: 5,
+       name: "Webflow",
+       percent: 97
+   },
+   {
+       id: 6,
+       name: "Asp.net",
+       percent: 85
+   },
+   {
+       id: 7,
+       name: "React.Js",
+       percent: 80
+   },
+   {
+       id: 8,
+       name: "Wix",
+       percent: 80
+   },
+   {
+       id: 9,
+       name: "SquareSpace",
+       percent: 90
+   },
+   {
+       id: 10,
+       name: "Django",
+       percent: 50
+   },
+   {
+       id: 11,
+       name: "Flask",
+       percent: 40
+   },
+   {
+       id: 12,
+       name: "Angular.Js",
+       percent: 35
+   },
+   {
+       id: 13,
+       name: "Vue.Js",
+       percent: 75
+   },
+   {
+       id: 14,
+       name: "HubSpot",
+       percent: 70
+   },
+];
+
 export default function LouisL() {
     let spanL = {
         lg: 6,
@@ -25,12 +177,6 @@ export default function LouisL() {
         md: 12,
         sm: 24,
         xs: 24
-    }
-    let spanSkills = {
-        lg: 8,
-        md:12,
-        sm:24,
-        xs:24
     }
 
     return (
@@ -75,131 +221,37 @@ export default function LouisL() {
                         </Space>
                         <hr className="text-white w-100" />
                     </div>
+                </Row>
+                <Row className="container my-5">
                     <div className="w-100">
                         <h4 className="text-white">Skills</h4>
                         <Space type="panel" direction="vertical" className="w-100 border p-3">
-                            <Row gutter={16}>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">PHP:</span>
-                                    <Progress percent={97} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">JavaScript<span>:</span></span>
-                                    <Progress percent={95} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">C#:</span>
-                                    <Progress percent={85} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">CSS:</span>
-                                    <Progress percent={100} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">Python:</span>
-                                    <Progress percent={75} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">Html:</span>
-                                    <Progress percent={100} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">jQuery:</span>
-                                    <Progress percent={100} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">Bootstrap:</span>
-                                    <Progress percent={100} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">VBA:</span>
-                                    <Progress percent={90} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">Google App Script:</span>
-                                    <Progress percent={75} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">Web Scrapping:</span>
-                                    <Progress percent={80} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">Data Programming:</span>
-                                    <Progress percent={90} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">Excel:</span>
-                                    <Progress percent={90} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">MySQL:</span>
-                                    <Progress percent={90} strokeColor="#f9e54c" />
-                                </Col>
-                            </Row>
+                           <Row gutter={16}>
+                              {
+                                 skills.map((skill, i) => {
+                                    return (
+                                       <ProgressComponent key={i} {...skill} />
+                                    );
+                                 })
+                              }
+                           </Row>
                         </Space>
                         <hr className="text-white w-100" />
                     </div>
+                </Row>
+                <Row className="container my-5">
                     <div className="w-100">
                         <h4 className="text-white">Experienced Web Frameworks</h4>
                         <Space type="panel" direction="vertical" className="w-100 border p-3">
-                            <Row gutter={16}>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">CodeIgniter:</span>
-                                    <Progress percent={100} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">WordPress:</span>
-                                    <Progress percent={90} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">Duda:</span>
-                                    <Progress percent={97} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">Shopify:</span>
-                                    <Progress percent={90} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">Webflow:</span>
-                                    <Progress percent={90} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">Asp.net:</span>
-                                    <Progress percent={80} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">React.Js:</span>
-                                    <Progress percent={75} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">Wix:</span>
-                                    <Progress percent={85} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">SquareSpace:</span>
-                                    <Progress percent={90} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">Django:</span>
-                                    <Progress percent={50} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">Flask:</span>
-                                    <Progress percent={60} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">Angular.Js:</span>
-                                    <Progress percent={20} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">Vue.Js:</span>
-                                    <Progress percent={80} strokeColor="#f9e54c" />
-                                </Col>
-                                <Col {...spanSkills} className="d-flex">
-                                    <span className="w-25">HubSpot:</span>
-                                    <Progress percent={75} strokeColor="#f9e54c" />
-                                </Col>
-                            </Row>
+                           <Row gutter={16}>
+                              {
+                                 frameworks.map((framework, i) => {
+                                    return(
+                                       <ProgressComponent key={i} {...framework} />
+                                    );
+                                 })
+                              }
+                           </Row>
                         </Space>
                         <hr className="text-white w-100" />
                     </div>
