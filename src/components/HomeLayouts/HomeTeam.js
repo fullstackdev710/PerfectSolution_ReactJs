@@ -5,7 +5,8 @@ import jacobProfileImg from "../../assets/imgs/persons/JacobD-photo-70-70.jpg";
 import emptyPersonImg from "../../assets/imgs/persons/Empty-person-70-70.png";
 // import akiraProfileImg from "../../assets/imgs/persons/Akira-photo-70-70.jpg";
 // import gustavoProfileImg from "../../assets/imgs/persons/Gustavo-photo-70-70.jpeg";
-import pascualProfileImg from "../../assets/imgs/persons/PascualG-photo-70-70.jpg";
+// import pascualProfileImg from "../../assets/imgs/persons/PascualG-photo-70-70.jpg";
+import louislProfileImg from "../../assets/imgs/persons/LouisL-photo-70-70.png";
 
 class HomeTeam extends Component {
     render() {
@@ -28,7 +29,7 @@ class HomeTeam extends Component {
                 position: "Full Stack Developer",
                 excerpt: "Website developer based on Framework: CodeIgniter, Laravel WordPress, Shopify, SquareSpace, Wix, etc.",
                 experiences: "7",
-                projects: "3"
+                projects: "100+"
             },
             // {
             //     id: 2,
@@ -40,15 +41,25 @@ class HomeTeam extends Component {
             //     experiences: "7",
             //     projects: "3"
             // },
+            // {
+            //     id: 3,
+            //     slug: "pascualg",
+            //     name: "Pascual Garcia Congrains",
+            //     photo: pascualProfileImg,
+            //     position: "Web Developer",
+            //     excerpt: "JS framework based Website developer(React, Angular, Node, Express, etc).",
+            //     experiences: "5",
+            //     projects: "100"
+            // },
             {
                 id: 3,
-                slug: "pascualg",
-                name: "Pascual Garcia Congrains",
-                photo: pascualProfileImg,
+                slug: "louis_l",
+                name: "Louis L",
+                photo: louislProfileImg,
                 position: "Web Developer",
-                excerpt: "JS framework based Website developer(React, Angular, Node, Express, etc).",
+                excerpt: "WordPress, CodeIgniter, Shopify, Duda, Webflow, Wix, SqureSpace, Laravel.",
                 experiences: "5",
-                projects: "100"
+                projects: "~100"
             },
         ]
 

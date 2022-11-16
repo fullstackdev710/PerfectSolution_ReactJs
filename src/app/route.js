@@ -6,6 +6,7 @@ import JacobD from '../components/OurTeam/JacobD';
 import GustavoL from '../components/OurTeam/GustavoL';
 import LiYang from '../components/OurTeam/LiYang';
 import PascualG from '../components/OurTeam/PascualG';
+import LouisL from '../components/OurTeam/LouisL';
 
 function AppRoute() {
     return (
@@ -19,6 +20,7 @@ function AppRoute() {
                 <Route path="/teams/gustavol" element={<GustavoL />} />
                 <Route path="/teams/li_yang" element={<LiYang />} />
                 <Route path="/teams/pascualg" element={<PascualG />} />
+                <Route path="/teams/louis_l" element={<LouisL />} />
             </Routes>
         </div>
     );
