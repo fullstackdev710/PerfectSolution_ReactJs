@@ -24,7 +24,7 @@ const ProjectOverviewComponent = (props) => {
             </Col>
             <Col {...spanM}>
                <Image src={props.img} />
-               <a href={props.url} className="ps-btn position-absolute bottom-0 start-50 translate-middle-x mb-5 d-block">View More</a>
+               <a href={'/projects/' + props.id} className="ps-btn position-absolute bottom-0 start-50 translate-middle-x mb-5 d-block">View More</a>
             </Col>
          </Row>
       </div>

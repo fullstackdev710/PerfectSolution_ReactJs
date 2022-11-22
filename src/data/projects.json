@@ -1,0 +1,86 @@
+[
+   {
+      "id": 1,
+      "title": "Website Redesign and Maintain",
+      "company": "Kopetsky Auto Wash, LLC",
+      "duration": "2020/7–2021/11",
+      "website": "https://www.kwash.com/",
+      "framework": "WordPress",
+      "template": "Custom Theme",
+      "details": "Custom theme development without any builders",
+      "img": "imgOne",
+      "url": ""
+   },
+   {
+      "id": 2,
+      "title": "Website Redesign and Maintain",
+      "company": "T-Scan Pty Ltd",
+      "duration": "2020/7–2021/11",
+      "website": "http://t-scan.com.au/",
+      "framework": "WordPress",
+      "template": "Custom Theme",
+      "details": "By using Divi builder, website development",
+      "img": "imgTwo",
+      "url": ""
+   },
+   {
+      "id": 3,
+      "title": "Maintain and Upgrade website",
+      "company": "Grind Fitness",
+      "duration": "2020/7–2021/11",
+      "website": "https://www.grindequipment.com/",
+      "framework": "WordPress",
+      "template": "Divi",
+      "details": "By using Divi, website development",
+      "img": "imgThree",
+      "url": ""
+   },
+   {
+      "id": 4,
+      "title": "Website Redesign and Add New Features",
+      "company": "Braaap Motocycles",
+      "duration": "",
+      "website": "https://braaapmotorcycles.com/",
+      "framework": "Shopify",
+      "template": "",
+      "details": "Build all pages individually in liquid custom code",
+      "img": "imgFour",
+      "url": ""
+   },
+   {
+      "id": 5,
+      "title": "Maintain and Upgrade Website",
+      "company": "Premier Corex",
+      "duration": "",
+      "website": "https://www.premiercorex.com/",
+      "framework": "WordPress",
+      "template": "Beaver Builder",
+      "details": "By using Beaver Builder website development",
+      "img": "imgFive",
+      "url": ""
+   },
+   {
+      "id": 6,
+      "title": "Website Development",
+      "company": "Holistic Horizons",
+      "duration": "",
+      "website": "",
+      "framework": "WordPress",
+      "template": "Divi",
+      "details": "Development from Scratch",
+      "img": "imgSix",
+      "url": ""
+   },
+   {
+      "id": 7,
+      "title": "Website Development",
+      "company": "Gizber Donation",
+      "duration": "",
+      "website": "",
+      "framework": "WordPress",
+      "template": "",
+      "details": "Website development, in specially, build the special widget by custom code, responsive fix.",
+      "img": "imgSeven",
+      "url": ""
+   }
+]
